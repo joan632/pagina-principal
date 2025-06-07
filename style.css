@@ -169,6 +169,8 @@
 
     .linea-social {
       flex: 1;
+      position: relative;
+      top: 400px;
       height: 1.5px;
       background-color: black;
       max-width: 800px;
@@ -176,6 +178,8 @@
 
     .redes-sociales {
       display: flex;
+      position: relative;
+      top: 400px;
       gap: 60px;
     }
 
