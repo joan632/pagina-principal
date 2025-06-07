@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Principal</title>
+  <!-- Aqui conectamos el css y una url para poder utilizar la tipografia del FIGMA -->
+  <link rel="stylesheet" href="PAGINAPRINCIPAL.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <!-- Aqui importamos la biblioteca de iconos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="encabezado">
+    <!-- Aqui se encuentran todos los iconos que van en la parte superior de la pagina
+    con su respectivo boton -->
+    <img src="IMAGENES/Logo.png" alt="Logo de la pagina" class="Logo">
+    <img src="IMAGENES/Icono de novedades.png" alt="Icono de novedades" class="novedades">
+    <img src="IMAGENES/Icono de notificaciones.png" alt="Icono de notificaciones" class="notificaciones">
+    <img src="IMAGENES/Icono de mensajes.png" alt="Icono de mensajes" class="mensajes">
+   
+    <!-- Aqui vemos el texto que se encuentra al lado de los iconos -->
+    <p class="Novedades"> Novedades </p>
+    <p class="Notificaciones"> Notificaciones </p>
+    <p class="Mensajes"> Mensajes </p>
+    <!-- Este es el menu desplegable -->
+    <div class="usuario-menu">
+      <button class="boton-usuario">A</button>
+      <div class="menu-desplegable">
+        <div class="flecha-arriba"></div>
+        <ul>
+          <li><i class="fas fa-user"></i> Perfil</li>
+          <li><i class="fas fa-cog"></i> Configuración</li>
+          <li><i class="fas fa-question-circle"></i> Ayuda</li>
+          <li><i class="fas fa-sign-out-alt"></i> Cerrar sesión</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Texto en la mitad de la pagina-->
+  <p class="Texto_medio"> Aquí encontrarás novedades, mensajes y conexiones con otros aprendices y egresados. </p>
+
+  <!-- ESTE ES EL BUSCADOR -->
+  <div class="search-container">
+    <input type="text" placeholder="search text" class="search-input">
+    <button type="submit" class="search-button">
+    <i class="fas fa-search"></i>
+    </button>
+  </div>
+
+  <!-- Aqui ingresamos los iconos de la parte de la mitad de la pagina-->
+  <div class="contenedor-iconos">
+    <div class="icono-con-texto">
+      <i class="fas fa-user"></i>
+      <p>APRENDIZ</p>
+    </div>
+    <div class="icono-con-texto">
+      <i class="fas fa-user-graduate"></i>
+      <p>EGRESADO</p>
+    </div>
+    <div class="icono-con-texto">
+      <i class="fas fa-folder-open"></i>
+      <p>PROYECTOS</p>
+    </div>
+  </div>
+  
+  
+  <!-- Aqui comenzaremos el footer de nuestra pagina -->
+  <footer class="footer-redes">
+    <div class="linea-social"></div>
+  
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com" target="_blank" class="icono-borde">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="icono-borde">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" class="icono-borde">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  
+    <div class="linea-social"></div>
+  </footer>
+  
+  
+
+  <script>
+    const btnUsuario = document.querySelector('.boton-usuario');
+    const menu = document.querySelector('.menu-desplegable');
+  
+    btnUsuario.addEventListener('click', () => {
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    });
+  
+    window.addEventListener('click', (e) => {
+      if (!btnUsuario.contains(e.target) && !menu.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+
+</html>
