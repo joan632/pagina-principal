@@ -182,6 +182,7 @@ body {
 .icono-del-centro img {
   width: 110px;
   height: auto;
+  cursor: pointer;
 }
 
 /* esta es toda la parte del footer */
