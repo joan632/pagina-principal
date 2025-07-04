@@ -194,19 +194,56 @@
 
 /* esta configuracion es para adaptar en telefonos o pantallas mas pequeñas */
 
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
       .Texto_medio {
         font-size: 20px;
       }
 
-      .redes-sociales {
-        gap: 30px;
-      }
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+  }
 
-      .contenedor-iconos {
-        flex-direction: column;
-        gap: 20px;
-      }
+  .centro,
+  .derecha {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .Logo {
+    margin-bottom: 20px;
+  }
+
+  .Texto_medio {
+    font-size: 20px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  .contenedor-iconos {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 40px 10px;
+  }
+
+  .redes-sociales {
+    gap: 30px;
+  }
+
+  .menu-desplegable {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
 
       .encabezado {
         flex-direction: column;
