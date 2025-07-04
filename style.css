@@ -8,6 +8,7 @@ body {
 }
 
 /* En esta parte vamos a modificar todos los elementos de la clase encabezado para que se visualice de forma horizontal */
+/* aqui modificamos todos los textos que encontramos en el encabezado */
 .encabezado {
   display: flex;
   justify-content: space-between;
@@ -23,11 +24,18 @@ body {
 }
 
 /* aqui vamos a modificar los iconos del centro  y el boton usuario */
-.centro,
 .derecha {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 80px;
+}
+
+.centro-publicados,
+.centro-notificaciones{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
 /* aqui ajustamos las imagenes */
