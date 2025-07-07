@@ -272,10 +272,9 @@ footer {
   }
 
   .Logo {
+    margin-left: 0px;
     margin-bottom: 20px;
   }
-
-  /* .Texto_medio { font-size: 20px; } */ /* ELIMINADO: Estaba duplicado */
 
   .search-container {
     flex-direction: column;
@@ -289,13 +288,12 @@ footer {
   }
 
   footer {
-    flex-direction: column;
     margin-top: 40px;
     padding: 40px 10px;
   }
 
   .footer-top-section {
-    flex-direction: column; 
+    flex-direction: row; 
     width: 100%; 
   }
 
@@ -310,7 +308,7 @@ footer {
   }
 
   .linea-social {
-    flex: none; 
+    flex-direction: row; 
     width: 200px; 
     height: 1.5px;
     background-color: #003322;
@@ -325,7 +323,7 @@ footer {
   }
 
   .creditos {
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
